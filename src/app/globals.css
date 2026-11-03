@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --google-blue: #4285f4;
+  --google-red: #ea4335;
+  --google-yellow: #fbbc05;
+  --google-green: #34a853;
+  --surface-bg: #ffffff;
+  --surface-subtle: #f8f9fa;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --border-subtle: #dadce0;
+}
+
+@layer base {
+  html {
+    color: var(--text-primary);
+    background-color: var(--surface-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: #ffffff;
+    color: #202124;
+    font-family:
+      "Google Sans",
+      "Segoe UI",
+      Roboto,
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+  }
+}
+
+@keyframes google-bar-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-google-progress {
+  animation: google-bar-slide 1.4s ease-in-out infinite;
+}
