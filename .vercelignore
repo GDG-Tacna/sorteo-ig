@@ -1,0 +1,7 @@
+.ig-session
+.env*
+.vercel
+.next
+node_modules
+*.tsbuildinfo
+*.log
